@@ -24030,6 +24030,11 @@
       "FilePath": "/media/mahfuz/2AF0B972F0B944BB/verto/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/media/mahfuz/2AF0B972F0B944BB/verto/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }

@@ -1,23 +1,26 @@
 @model Verto.Models.HomePageContent
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>@Model.Title</title>
-</head>
-<body>
-    <header>
-        <h1>@Model.Title</h1>
-        <h2>@Model.Subtitle</h2>
-    </header>
-    
-    <main>
-        <img src="@Model.ImagePath" alt="Image" />
-        <p>@Model.Description</p>
-    </main>
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "My Page Title";
+}
+<main>
+    <div>
+        <title>@Model.Title</title>
+    </div>
+    <div>
+        <div>
+            <h1>@Model.Title</h1>
+            <h2>@Model.Subtitle</h2>
+        </div>
 
-    <footer>
-        <p>Last Updated: @Model.LastUpdated.ToString("MMMM dd, yyyy")</p>
-    </footer>
-</body>
-</html>
+        <div>
+            <img src="@Model.ImagePath" alt="Image" />
+            <p>@Model.Description</p>
+        </div>
+
+        <div>
+            <p>Last Updated: @Model.LastUpdated.ToString("MMMM dd, yyyy")</p>
+        </div>
+    </div>
+</main>
