@@ -1,0 +1,23 @@
+@model Verto.Models.HomePageContent
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@Model.Title</title>
+</head>
+<body>
+    <header>
+        <h1>@Model.Title</h1>
+        <h2>@Model.Subtitle</h2>
+    </header>
+    
+    <main>
+        <img src="@Model.ImagePath" alt="Image" />
+        <p>@Model.Description</p>
+    </main>
+
+    <footer>
+        <p>Last Updated: @Model.LastUpdated.ToString("MMMM dd, yyyy")</p>
+    </footer>
+</body>
+</html>
