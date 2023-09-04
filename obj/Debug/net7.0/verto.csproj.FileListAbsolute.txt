@@ -25,3 +25,4 @@
 /media/mahfuz/2AF0B972F0B944BB/verto/obj/Debug/net7.0/ref/verto.dll
 /media/mahfuz/2AF0B972F0B944BB/verto/obj/Debug/net7.0/verto.RazorAssemblyInfo.cache
 /media/mahfuz/2AF0B972F0B944BB/verto/obj/Debug/net7.0/verto.RazorAssemblyInfo.cs
+/media/mahfuz/2AF0B972F0B944BB/verto/bin/Debug/net7.0/verto.staticwebassets.runtime.json
