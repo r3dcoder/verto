@@ -4,41 +4,19 @@
     Layout = "_Layout";
     ViewBag.Title = "Home";
 }
-<main>
-    <div>
-        <title>@Model.Title</title>
-    </div>
-    <div>
-        <div>
-            <h1>@Model.Title</h1>
-            <h2>@Model.Subtitle</h2>
-        </div>
 
-        <div>
-            <img src="@Model.ImagePath" alt="Image" />
-            <p>@Model.Description</p>
-        </div>
+<!-- Include the slider component -->
+@Html.Partial("_Slider")
 
-        <div>
-            <p>Last Updated: @Model.LastUpdated.ToString("MMMM dd, yyyy")</p>
-        </div>
 
-        <div class="grid-container">
-            <div class="grid-x">
-                <div class="cell medium-4">
-                    1
-                    <!-- Content for the first column -->
-                </div>
-                <div class="cell medium-4">
-                    <!-- Content for the second column -->
-                    2
-                </div>
-                <div class="cell medium-4">
-                    <!-- Content for the third column -->
-                    3
-                </div>
-            </div>
-        </div>
-
-    </div>
-</main>
+<!-- Views/Home/Index.cshtml (or your specific view) -->
+<script>
+    $(document).ready(function () {
+        $('.slider').slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true
+        });
+    });
+</script>

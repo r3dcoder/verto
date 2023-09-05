@@ -1,68 +1,182 @@
-/* Header Styles */
- 
-.header-container{
+/* Header Container Styles */
+.header-container {
     background: #E6E7E8;
     padding: 15px;
-
 }
 
+/* Header Styles */
 .header {
-    height: auto;
     max-width: 1280px;
-    /* background: #556473; */
-    /* background: #E6E7E8; */
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     color: #258957;
-    /* display: flex; */
- }
- .menu-items{
+    overflow: hidden;
+}
+
+/* Menu Items Styles */
+.menu-items {
     font-size: 13px;
     font-weight: normal;
     color: #7b847f;
- }
- .menu-item{
+}
+
+.menu-item {
     margin-right: 18px;
- }
+}
 
 /* Logo Styles */
 .logo {
     height: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     background: #cdd3d0;
     width: 200px;
 }
 
-  
-.search-box{
+/* Search Box Styles */
+.search-box {
     height: 55px;
-    
 }
-.search-icon{
+
+/* Search Icon Styles */
+.search-icon {
     background-color: #7b847f;
-    margin-top: auto;
+    margin: auto;
     height: 30px;
     padding: 2px;
-    margin-bottom: auto;
 }
-input{
+
+/* Input Styles */
+input {
     margin-top: 16px !important;
     width: 100%;
-
     height: 30px !important;
     background: white !important;
-     border: 1px solid #949191 !important; 
+    border: 1px solid #949191 !important;
 }
 
+/* Search Icon for Google */
 .search-g-icon {
-    color: white; 
+    color: white;
 }
 
-.menu-label{
+/* Menu Label Styles */
+.menu-label {
     color: #49514c;
     margin-right: 6px;
 }
+
+/* Menu Icon Styles */
 .menu-g-icon {
     color: #258957;
- }
+}
+
+
+
+/* =======================================
+        Slider
+        ====================================*/
+
+.slider {
+    height: 0px;
+    margin-top: 0px;
+    max-width: 100%;
+    z-index: 1;
+
+    /* overflow: hidden; */
+}
+
+
+/* Hide next and previous buttons */
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+.slider-img {
+    z-index: 2;
+    position: relative;  
+}
+
+.slick-dots {
+    text-align: right;
+    background: transparent;
+    margin-top: -5%;
+    margin-right: 25%;
+    z-index: 3;
+    position: relative;  
+}
+
+
+.slick-dots li {
+    display: inline-block;
+    padding: 2px;
+    background-color: #ccc;
+    margin: 10px 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slick-dots button {
+    display: none;
+}
+
+.slick-dots li.slick-active {
+    background: #258957;
+    border: 2px solid #ded1c7;
+}
+
+.slick-slider img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+
+}
+
+
+
+/* .slick-slide {
+            padding:40px 0;
+            position: relative;
+            height:auto !important;
+            opacity: 0.5;
+            transition: all 900ms ease;
+        } */
+
+.slick-current {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.slick-slide .xyz {
+    opacity: 0;
+}
+
+.slick-current .xyz {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none !important;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    top: -10px;
+    color: #fff;
+    padding: 5px 13px;
+    /* border: 2px solid #7c4a21; */
+    background-color: transparent;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+/* Apply styles for screens with a max width of 768px (typical for mobile devices) */
+
+@media (max-width: 768px) {
+    .slick-dots {
+        margin-right: 8%;
+        margin-top: -12%;
+    }
+}
