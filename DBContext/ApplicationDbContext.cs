@@ -11,6 +11,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<Posts> Posts { get; set; } // DbSet for "Posts" entity
     
     public DbSet<Offers> Offers { get; set; } // DbSet for "Offers" entity
+    public DbSet<ProductCategories> ProductCategories { get; set; } // DbSet for "ProductCategories" entity
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -22,6 +23,11 @@ public class ApplicationDbContext : DbContext
         // Configuration for the Offers entity
         modelBuilder.Entity<Offers>()
             .HasKey(o => o.OfferID); // "OfferID" is the primary key property name
+
+                // Configuration for the ProductCategories entity
+        modelBuilder.Entity<ProductCategories>()
+            .HasKey(o => o.CategoryID); // "CategoryID" is the primary key property name
+
 
     }
 }

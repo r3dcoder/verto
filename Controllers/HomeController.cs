@@ -22,13 +22,15 @@ namespace Verto.Controllers
             // var posts = await _context.Posts.ToListAsync();
             var posts = await _context.Posts.ToListAsync();
             var offers =  await _context.Offers.ToListAsync();
+            var productCategories =  await _context.ProductCategories.ToListAsync();
 
             // Create the ViewModel
             var viewModel = new HomePageViewModel
             {
                 HomePageContent = content,
                 Posts = posts,
-                Offers = offers
+                Offers = offers, 
+                ProductCategories = productCategories
             };
 
             // Pass the ViewModel to the view

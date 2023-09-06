@@ -10,5 +10,6 @@ namespace Verto.Models
         public HomePageContent HomePageContent { get; set; }
         public List<Posts> Posts { get; set; }
         public List<Offers> Offers { get; set; }
+        public List<ProductCategories> ProductCategories { get; set; }
     }
 }

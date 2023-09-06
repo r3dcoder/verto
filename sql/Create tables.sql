@@ -1,21 +1,8 @@
--- Insert rows into the 'Offers' table
-INSERT INTO
-    Offers (Title, ImageURL, Offer)
-VALUES
-    (
-        'Discovery WP PC',
-        'https://m.economictimes.com/thumb/msid-94286612,width-1200,height-900,resizemode-4,imgsize-42116/istock-1043657526-1.jpg',
-        '50% cashback on all items'
-    ),
-    (
-        'HR ED Field Scopes',
-        'https://mywanderingvoyage.com/wp-content/uploads/2022/08/Feature-header.jpg',
-        'Buy 2, Get 1 Free on selected items'
-    ),
-    (
-        'IS 60 FieldScopes  33',
-        'https://www.dpreview.com/files/p/articles/4794169662/HH4A0123_copy.jpeg',
-        'Flat 20% discount on electronics'
-    );
 
+-- Insert 4 rows into the ProductCategories table
+INSERT INTO ProductCategories (Title, ImageURL)
+VALUES
+    ('Porro Prism', 'https://upload.wikimedia.org/wikipedia/commons/9/90/Binocular_with_8x_magnification_and_42_mm_lens_diameter.jpg'),
+    ('Roof Prism', 'https://images.theoutdoorwire.com/2021/12/13/9ab2c2fe-d9af-4845-96d0-14ac05292ae1_600x400.jpg')
+    
 GO

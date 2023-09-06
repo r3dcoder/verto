@@ -45,31 +45,19 @@
     </div>
 </div>
 
+<div class="category-slider-container">
 
-<div class="grid-container">
-    <div class="grid-x grid-padding-x">
-
-        <!-- Left Column (large screens) -->
-        <div class="cell large-8">
-            <h1>@Model.HomePageContent.Title</h1>
-            <p>@Model.HomePageContent.Description</p>
-            <p>Last Updated: @Model.HomePageContent.LastUpdated.ToString("MMMM dd, yyyy")</p>
-        </div>
-
-        <!-- Right Column (large screens) -->
-        <div class="cell large-4">
-
-            <!-- Add content for the right column here -->
-        </div>
-
-        <!-- Full-width Column (small screens) -->
-        <div class="cell small-12 hide-for-large">
-            <!-- Content for small screens -->
-        </div>
-
+    <div class="category-slider">
+        @foreach (var category in Model.ProductCategories)
+        {
+            <div class="category-slide">
+                <img src="@category.ImageURL" alt="@category.Title">
+                <h3>@category.Title</h3>
+            </div>
+        }
     </div>
-</div>
 
+</div>
 
 
 
@@ -78,6 +66,13 @@
 <script>
     $(document).ready(function () {
         $('.slider').slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true
+        });
+
+        $('.product-category-slider').slick({
             dots: true,
             autoplay: true,
             autoplaySpeed: 3000,
