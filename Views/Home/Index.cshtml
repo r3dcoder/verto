@@ -1,4 +1,4 @@
-@model Verto.Models.HomePageContent
+@model Verto.Models.HomePageViewModel
 
 @{
     Layout = "_Layout";
@@ -7,6 +7,71 @@
 
 <!-- Include the slider component -->
 @Html.Partial("_Slider")
+
+<div class=" post-container grid-container">
+    <div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-4">
+        @foreach (var post in Model.Posts)
+        {
+            <div class=" post-card cell">
+                <h5>@post.Title</h5>
+                <div class="">
+                    <img class="post-img" src="@post.ImageURL" alt="@post.Title">
+                    <p class="post-content">@post.Content</p>
+                </div>
+                <button class="post-button">View @post.Title.Split(' ').Last()</button>
+            </div>
+        }
+    </div>
+</div>
+
+
+<div class="offers-container grid-container">
+    <div class="title">Special Offers</div>
+
+    <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
+        @foreach (var offer in Model.Offers)
+        {
+            <div class="offer-card cell">
+                <img class="offer-img" src="@offer.ImageURL" alt="@offer.Title">
+                <h5>@offer.Title</h5>
+                <p class="offer-description">@offer.Offer</p>
+            </div>
+        }
+    </div>
+    <div class="centered-container">
+        <button class="offer-button">View All Offers</button>
+
+
+    </div>
+</div>
+
+
+<div class="grid-container">
+    <div class="grid-x grid-padding-x">
+
+        <!-- Left Column (large screens) -->
+        <div class="cell large-8">
+            <h1>@Model.HomePageContent.Title</h1>
+            <p>@Model.HomePageContent.Description</p>
+            <p>Last Updated: @Model.HomePageContent.LastUpdated.ToString("MMMM dd, yyyy")</p>
+        </div>
+
+        <!-- Right Column (large screens) -->
+        <div class="cell large-4">
+
+            <!-- Add content for the right column here -->
+        </div>
+
+        <!-- Full-width Column (small screens) -->
+        <div class="cell small-12 hide-for-large">
+            <!-- Content for small screens -->
+        </div>
+
+    </div>
+</div>
+
+
+
 
 
 <!-- Views/Home/Index.cshtml (or your specific view) -->

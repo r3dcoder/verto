@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cE3/p7813QlVyMoFEQW48Ft3aPtLik5AC3KSxN0CysM=",
+  "Hash": "5Nh9YczMKHXuBN7aGbMxzkd7LbXj4RFC3z1Dp2sy/Ak=",
   "Source": "verto",
   "BasePath": "_content/verto",
   "Mode": "Default",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/media/mahfuz/2AF0B972F0B944BB/verto/wwwroot/assets/images/image 1.jpg",
+      "SourceId": "verto",
+      "SourceType": "Discovered",
+      "ContentRoot": "/media/mahfuz/2AF0B972F0B944BB/verto/wwwroot/",
+      "BasePath": "_content/verto",
+      "RelativePath": "assets/images/image 1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/images/image 1.jpg"
+    },
+    {
+      "Identity": "/media/mahfuz/2AF0B972F0B944BB/verto/wwwroot/assets/images/image 2.jpg",
+      "SourceId": "verto",
+      "SourceType": "Discovered",
+      "ContentRoot": "/media/mahfuz/2AF0B972F0B944BB/verto/wwwroot/",
+      "BasePath": "_content/verto",
+      "RelativePath": "assets/images/image 2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/images/image 2.jpg"
+    },
     {
       "Identity": "/media/mahfuz/2AF0B972F0B944BB/verto/wwwroot/foundation/css/app.css",
       "SourceId": "verto",

@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "/media/mahfuz/2AF0B972F0B944BB/verto/wwwroot/assets/images/image 1.jpg",
+      "PackagePath": "staticwebassets/assets/images/image 1.jpg"
+    },
+    {
+      "Id": "/media/mahfuz/2AF0B972F0B944BB/verto/wwwroot/assets/images/image 2.jpg",
+      "PackagePath": "staticwebassets/assets/images/image 2.jpg"
+    },
+    {
       "Id": "/media/mahfuz/2AF0B972F0B944BB/verto/wwwroot/foundation/css/app.css",
       "PackagePath": "staticwebassets/foundation/css/app.css"
     },
