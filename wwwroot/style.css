@@ -1,4 +1,7 @@
-/* Header Container Styles */
+
+/* =======================================
+        Header
+        ====================================*/
 .header-container {
     background: #E6E7E8;
     padding: 30px 15px;
@@ -471,7 +474,10 @@ a {
 
 
 
-/* Footer Styles */
+/* =======================================
+        Footer
+        ====================================*/
+
 footer {
 
     background-color: #BBBDBF;
